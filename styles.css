@@ -105,6 +105,10 @@ a {
   display: flex;
 }
 
+.hero__actions {
+  margin-top: 28px;
+}
+
 .signal-card {
   width: 100%;
   padding: 34px;
@@ -121,6 +125,19 @@ a {
   letter-spacing: 0.16em;
   font-size: 0.76rem;
   font-weight: 700;
+  color: var(--accent);
+}
+
+.signal-list {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--text);
+  display: grid;
+  gap: 14px;
+  line-height: 1.6;
+}
+
+.signal-list li::marker {
   color: var(--accent);
 }
 
@@ -155,7 +172,6 @@ h3 {
 }
 
 .hero__lead,
-.signal-card p,
 .info-card p,
 .detail-card p,
 .who-card p,
@@ -303,11 +319,11 @@ h3 {
   }
 
   .hero__lead,
-  .signal-card p,
   .info-card p,
   .detail-card p,
   .who-card p,
-  .contact-card p {
+  .contact-card p,
+  .signal-list {
     font-size: 1rem;
   }
 }
